@@ -2,7 +2,7 @@
 
 <ul class="speakers-list">
 <% for speaker in @workshop: %>
-  <% if speaker.presentation: %>
+  <% if speaker.name: %>
     <li class="speakers-item" itemprop="performer" itemscope itemtype="http://schema.org/Person">
       <% if speaker.photo: %>
         <span class="speaker-photo">
@@ -11,9 +11,6 @@
       <% end %>
 
       <h3 class="speech-title">
-        <% if speaker.presentation.time: %>
-          <span class="speech-time"><%= speaker.presentation.time %></span>
-        <% end %>
           <span> <%= speaker.presentation.title %></span>
       </h3>
 
@@ -33,6 +30,7 @@
       <tr>
         <th class="schedule-time">Data</th>
         <th class="schedule-time">Horário</th>
+        <th class="schedule-time">Local</th>
         <th class="schedule-slot">Atividade</th>
         <th class="schedule-description">Descrição</th>
       </tr>
@@ -44,6 +42,7 @@
           <tr>
             <td class="schedule-time"><%= slot.presentation.date %></td>
             <td class="schedule-time"><%= slot.presentation.time %></td>
+            <td class="schedule-time"><%= slot.presentation.local %></td>
             <td class="schedule-slot">
             <% if slot.photo: %>
               <span class="speaker-photo">
@@ -62,6 +61,25 @@
             <td class="schedule-description">-</td>
           </tr>
         <% end %>
+
+        <% if slot.presentation_two: %>
+          <tr>
+            <td class="schedule-time"><%= slot.presentation_two.date %></td>
+            <td class="schedule-time"><%= slot.presentation_two.time %></td>
+            <td class="schedule-time"><%= slot.presentation_two.local %></td>
+            <td class="schedule-slot">
+            <% if slot.photo: %>
+              <span class="speaker-photo">
+                <img class="photo" src="<%= slot.photo %>" alt="<%= slot.name %>">
+              </span>
+            <% end %>
+            <%= slot.presentation_two.title %>
+              <span class="speakers-company"><%= slot.company %></span>
+            </td>
+            <td class="schedule-description"><%= slot.presentation_two.description %></td>
+          </tr>
+        <% end %>
+
       <% end %>
 
     </tbody>

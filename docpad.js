@@ -7,12 +7,12 @@ module.exports = {
 
         // Conference infoy
         conf: {
-            name: "Arquitetura Uningá",
-            description: "Semana de Arquitetura da Uningá",
-            date: "27/10 - 30/10",
+            name: "Semana Acadêmica Arquitetura e Urbanismo Uningá",
+            description: 'A Semana Acadêmica de Arquitetura e Urbanismo da Faculdade Ingá tem como objetivo estimular a reflexão sobre a produção da Arquitetura e do Urbanismo em um contexto contemporâneo, passando pela temática das políticas de habitação social, atuação profissional do arquiteto e urbanista e revivendo a obra de um dos mais importantes arquitetos brasileiros através da exibição do documentário "Vilanova Artigas: o arquiteto e a luz". O evento também tem como objetivo complementar a formação acadêmica dos estudantes do curso de Arquiteura e Urbanismo, através dos mini-cursos, oficinas e workshops, que proporcionarão grande contribuição e aperfeiçoamento no domínio de técnicas de representação gráfica. Por fim, como encerramento da semana, o desafio da charrete busca discutir diversas formas de pensar e fazer Arquitetura e Urbanismo, gerando reflexões e instigando a criatividade para solucionar problemas do cotidiano. Assim, o exercício instigará o aluno a uma reflexão mais profunda sobre os principais tópicos que regem o ensino e a prática da arquitetura e do urbanismo. A fragmentação das práticas de projeto, bem como a natural distancia em que se encontram as disciplinas teóricas necessitam serem extrapoladas eventualmente, para permitir ao acadêmico uma visão da totalidade que é o oficio da arquitetura.',
+            date: "",
             // If your event is free, just comment this line
             //price: "$100",
-            venue: "Uningá",
+            venue: "",
             address: "Faculdade Ingá",
             city: "Maringá",
             state: "Paraná"
@@ -33,6 +33,8 @@ module.exports = {
           'location',
           'speakers',
           'workshops',
+          'charrete',
+          'organization',
           'partners'
         ],
 
@@ -43,6 +45,8 @@ module.exports = {
             speakers: "Palestras",
             schedule: "Agenda",
             workshops: "Workshops",
+            charrete: "Charrete",
+            organization: "ComOrg",
             partners: "Apoio"
         },
 
@@ -51,7 +55,7 @@ module.exports = {
           {
               name: "Beatriz Fleury e Ricardo Silva",
               photo: "themes/yellow-swan/img/beatrizericardo.png",
-              bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+              bio: "Beatriz Fleury e Ricardo Silva são professores do departamento de arquitetura e urbanismo da Universidade Estadual de Maringá e apresentam pesquisa sobre a política habitacional recente e os impactos sócio ambientais no aglomerado metropolitano Sarandi – Maringá – Paiçandu.",
               company: "UEM",
               link: {
                   href: "http://www.dau.uem.br/",
@@ -75,7 +79,7 @@ module.exports = {
               },
               presentation: {
                   title: "Trajetória e obra em 10 anos",
-                  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
+                  description: "Os arquitetos João Vitor e Rodrigo Pupin formam com seus colaboradores o escritório GRUPOPR e apresentam sua trajetória e obra em 10 anos de atuação profissional",
                   date: "28/10",
                   time: "19h00"
               }
@@ -100,20 +104,100 @@ module.exports = {
 
         // The entire schedule
         workshop: [
-          {
-              name: "Tiririca",
-              photo: "themes/yellow-swan/img/tiririca.jpg",
-              bio: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-              company: "Tiririca",
+            {
+                name: "Rosana Bacicheti",
+                photo: "themes/yellow-swan/img/Rosana.jpg",
+                bio: 'Doodle é uma palavra inglesa para referir um tipo de esboço ou desenho realizado quando uma pessoa está distraída ou ocupada. A palavra portuguesa é "rabisco". São desenhos simples que podem ter significado concreto de representação ou simplesmente representar formas abstratas.',
+                company: "UEM",
+                link: {
+                    href: "http://www.uem.br/",
+                    text: "www.uem.br"
+                },
+                presentation: {
+                    title: "Oficina de criação e composição com Doodle",
+                    description: "Materiais: Caneta retroprojetor ou nanquim ponta fina e grossa; Caneta hidrocor ou lápis aquarelado; Esquadro pequeno, regua e tesoura.",
+                    date: "27/10",
+                    time: "08h00",
+                    local: "Lab. 15"
+                }
+            },
+            {
+              name: "Gleison Gerola",
+              photo: "themes/yellow-swan/img/Gleison.jpg",
+              bio: "A expressão gráfica computacional está presente cada vez mais em escritórios de design, arquitetura e engenharia modernos, por se tratar de uma ferramenta que otimiza e facilita a compreensão gráfica de projetos e produtos. Assim, o curso será um complemento ao conteúdo curricular do curso de Arquitetura e Urbanismo, com o objetivo de auxiliar em uma melhor qualidade de apresentação de trabalhos acadêmicos.",
+              company: "Faculdade Ingá",
               link: {
-                  href: "http://www.google.arq.br/",
-                  text: "www.google.arq.br"
+                  href: "http://www.faculdadeinga.com.br/",
+                  text: "www.faculdadeinga.com.br"
               },
               presentation: {
-                  title: "Titulo workshop",
-                  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo",
-                  date: "21/10",
-                  time: "21h00"
+                  title: "Diagramação de Pranchas em Corel Draw - Parte I",
+                  description: "Materiais: Notebook, incluindo mouse e carregador de bateria. O programa do Corel Draw deverá estar instalado.",
+                  date: "27/10",
+                  time: "14h00",
+                  local: "Lab. 15"
+              }
+          },
+          {
+              name: "Oráculo Cursos",
+              photo: "themes/yellow-swan/img/sketchup.jpg",
+              bio: 'Sketchup é uma ferramenta fantástica onde você desenvolve projetos 3D com grande facilidade certo? NEM SEMPRE! Você precisa saber quais os plug-ins adequados para não sofrer na modelagem de escadas, telhados e formas orgânicas, o curso de Sketchup avançado é para você que já sabe utilizar o programa mas que ir além desse nível. Aulas com tira-dúvidas, novos plug-ins, e o melhor que o Sketchup tem para oferecer.',
+              company: "Oráculo Cursos",
+              link: {
+                  href: "http://www.oraculocursos.com.br",
+                  text: "www.oraculocursos.com.br"
+              },
+              presentation: {
+                  title: "Sketchup - Ferramentas de velocidade",
+                  description: "Materiais: Notebook, incluindo mouse e carregador de bateria. O programa do Sketchup deverá estar instalado.",
+                  date: "28/10",
+                  time: "08h00",
+                  local: "Lab. 15"
+              }
+          },
+          {
+              photo: "themes/yellow-swan/img/Gleison.jpg",
+              presentation: {
+                  title: "Diagramação de Pranchas em Corel Draw - Parte II",
+                  description: "Materiais: Notebook, incluindo mouse e carregador de bateria. O programa do Corel Draw deverá estar instalado.",
+                  date: "28/10",
+                  time: "14h00",
+                  local: "Lab. 15"
+              }
+          },
+          {
+              photo: "themes/yellow-swan/img/Gleison.jpg",
+              presentation: {
+                  title: "Diagramação de Pranchas em Corel Draw - Parte I",
+                  description: "Materiais: Notebook, incluindo mouse e carregador de bateria. O programa do Corel Draw deverá estar instalado.",
+                  date: "29/10",
+                  time: "08h00",
+                  local: "Lab. 15"
+              }
+          },
+          {
+              photo: "themes/yellow-swan/img/Gleison.jpg",
+              presentation: {
+                  title: "Diagramação de Pranchas em Corel Draw - Parte II",
+                  description: "Materiais: Notebook, incluindo mouse e carregador de bateria. O programa do Corel Draw deverá estar instalado.",
+                  date: "30/10",
+                  time: "08h00",
+                  local: "Lab. 15"
+              }
+          }
+        ],
+
+        charrete: [
+          {
+              name: "",
+              photo: "themes/yellow-swan/img/charrete.jpg",
+              bio: "A origem do termo é controversa e múltipla. A versão mais conhecida vem da França, da Escola de Belas Artes de Paris, onde havia uma tradição que compreendia em dar aos estudantes uma tarefa de projeto em um tempo extremamente curto. Concluído o exercício, uma charrette passava pelas ruas, recolhendo os projetos. Na década de 80, o termo foi resgatado por urbanistas norte-americanos como uma nova forma colaborativa de planejamento da cidade e hoje se tornou mais uma importante ferramenta de elaboração de projetos.",
+              company: "Faculdade Ingá",
+              presentation: {
+                  title: "II Charrete Arquitetura e Urbanismo",
+                  description: "A política Habitacional recente e os impactos socioambientais aglomerado metropolitano Sarandi-Maringá-Paiçandu",
+                  date: "30/10",
+                  time: "19h00"
               }
           }
         ],
@@ -126,6 +210,70 @@ module.exports = {
               url: "http://faculdadeinga.com.br/"
           }
         ],
+
+        // List of Partners
+        organization: [
+          {
+              name: "Daniel",
+              logo: "themes/yellow-swan/img/organization/Daniel.jpg",
+              url: "https://www.facebook.com/daniel.bittencourtcosta"
+          },
+          {
+              name: "Andressa",
+              logo: "themes/yellow-swan/img/organization/Andressa.jpg",
+              url: "https://www.facebook.com/andressa.mortean"
+          },
+          {
+              name: "Guilherme",
+              logo: "themes/yellow-swan/img/organization/Guilherme.jpg",
+              url: "https://www.facebook.com/tijolins"
+          },
+          {
+              name: "Hugo",
+              logo: "themes/yellow-swan/img/organization/Hugo.jpg",
+              url: "https://www.facebook.com/rompatto"
+          },
+          {
+              name: "Laize",
+              logo: "themes/yellow-swan/img/organization/Laize.jpg",
+              url: "https://www.facebook.com/laizebianchi"
+          },
+          {
+              name: "Leopoldo",
+              logo: "themes/yellow-swan/img/organization/Leopoldo.jpg",
+              url: "https://www.facebook.com/leopoldolopesI"
+          },
+          {
+              name: "Luiz Felipe",
+              logo: "themes/yellow-swan/img/organization/LuizFelipe.jpg",
+              url: "https://www.facebook.com/felipebathke"
+          },
+          {
+              name: "Paola",
+              logo: "themes/yellow-swan/img/organization/Paola.jpg",
+              url: "https://www.facebook.com/paola.verri.5"
+          },
+          {
+              name: "Giovana",
+              logo: "themes/yellow-swan/img/organization/Giovana.jpg",
+              url: "https://www.facebook.com/giovana.bergamo.1"
+          },
+          {
+              name: "Sarah",
+              logo: "themes/yellow-swan/img/organization/Sarah.jpg",
+              url: "https://www.facebook.com/sarah.augustasilva"
+          }
+        ],
+
+
+
+
+
+
+
+
+
+
 
         // Theme path
         getTheme: function () {
